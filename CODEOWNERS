@@ -1,0 +1,2 @@
+* @theforeman/packaging
+/packages/plugins/*remote_execution*/ @theforeman/packaging @theforeman/remote-execution

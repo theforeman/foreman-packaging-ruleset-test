@@ -1,0 +1,20 @@
+---
+name: RPM
+
+on:
+  - pull_request
+
+jobs:
+  rpm:
+    - name: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Build
+          run: echo Success
+
+    - name: repoclosure
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+        - name: Repoclosure
+          run: echo All good
